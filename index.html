@@ -1,15 +1,134 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <h1>ポートフォリオサイト</h1>
-    <script src="main.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='TAKUMA TOKUNO 自己紹介'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='TAKUMA TOKUNOの自己紹介サイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="TAKUMA TOKUNOの自己紹介サイトです" />
+  <title>TAKUMA TOKUNO 自己紹介</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel=”canonical” href=”http://127.0.0.1:5500/index.html” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header">
+      <div class="inner">
+        <h1 class="header-logo">
+          <a href=".">TAKUMA TOKUNO</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="#works">PRODUCTS</a></li>
+            <li class="header-nav-item"><a href="#about">ABOUT ME</a></li>
+            <li class="header-nav-item"><a href="#contact">ACCOUNTS</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <!-- main-visual -->
+      <div class="main-visual">
+        <div class="main-visual-inner">
+         <img src="images\main.jpg" alt="">
+        </div>
+      </div>
+      <!-- /main-visual -->
+
+      <!-- products -->
+      <section class="works section" id="works">
+        <div class="inner">
+          <h2 class="title">PRODUCTS</h2>
+          <div class="works-list">
+            <a class="works-item" href="https://line.me/R/ti/p/@919tabij">
+              <div class="element js-animation"><img src="images\omikuji.jpg" alt="画像2"></div> 
+              <!-- <p class="works-img"><img src="images\omikuji.jpg" alt="" /></p> -->
+              <p class="works-name">おみくじLINEbot</p>
+              <p class="works-info">Google Apps ScriptとJavaScriptを使ってLINEbotで大学生向けのおみくじアプリを作りました。
+                <br>画像または名前をクリックすれば友達追加ができます！
+                <br>大吉と凶はなかなかお目にかかれません！
+              </p>
+            </a>
+            <a class="works-item">
+              <div class="element js-animation"><img src="images\ToDo.jpg" alt="画像3"></div>
+              <!-- <p class="works-img"><img src="images\ToDo.jpg" alt="" /></p> -->
+              <p class="works-name">ToDoリスト管理bot</p>
+              <p class="works-info">Google Apps ScriptとGoogleカレンダーを連携し、JavaScriptを使ってLINEbotでToDoリストを管理してくれるbotを作りました。
+                <br>予定の追加や一日の予定の確認がすぐにできるようにし、加えて1週間の予定が毎朝リマインドされる機能を実装しました。
+                <br>(私のGoogleカレンダーを連携しているため、自分以外は友達追加ができません。)
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- /products -->
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <div class="inner">
+          <h2 class="title">ABOUT ME</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="images/profile.jpg" alt="">
+            </p>
+            <div class="profile-body">
+              <p>
+                得能 拓真(とくのう たくま)
+              </p>
+              <p>
+                6月10日生まれ 東京在住<br>
+                早稲田大学3年生
+              </p>
+              <p>
+              【趣味】<br>
+                アニメ、ドラマ(日本、韓国)、音楽ゲーム、バスケットボール🏀、卓球🏓、オセロなど<br>多趣味
+              </p>
+              <p>
+                プログラミングの経験はまだ浅いですが、個人開発やチーム開発ができるようになるのを目指しています。<br>
+                23卒なので就活とも並行しながら頑張っていきます！
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /about -->
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="inner">
+          <h2 class="title">ACCOUNTS</h2>
+          <p class="lead">
+            ぜひフォローしてください！(Twitterは就活用のアカウントです。)
+          </p>
+          <div class="contact-list">
+            <a class="contact-item" href="https://twitter.com/toku_takuma" target="_blank" rel="noopener">Twitter</a>
+            <a class="contact-item" href="https://www.instagram.com/toku_1412" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </section>
+      <!-- /contact -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;TAKUMA TOKUNO</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script type='text/javascript' src="script.js"></script>
+</body>
 </html>
