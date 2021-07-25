@@ -1,5 +1,4 @@
 body {
-    font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: .8px;
@@ -11,7 +10,20 @@ body {
     text-decoration: none;
     color: #1ca9e3;
   }
+
+  h1{
+    font-family: 'Kaushan Script', cursive;
+    }
   
+  nav ul li{
+    font-family: 'Kaushan Script', cursive;
+
+  }  
+
+  h2{
+    font-family: 'Montserrat Subrayada', sans-serif;
+  }
+
   img {
     max-width: 100%;
     height: auto;
@@ -44,7 +56,7 @@ body {
   }
   
   .section:nth-of-type(odd) {
-    background-color: #BAD3FF;
+    background-color: #99CC99;
   }
   
   .inner {
@@ -78,7 +90,7 @@ body {
     top: 0;
     z-index: 1;
     width: 100%;
-    background-color: #fc6;
+    background-color: #008080;
     box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
   }
   
@@ -144,7 +156,6 @@ body {
   .main-visual {
     display: flex;
     align-items: center;
-    height: 90vh;
     }
 
   /*--------------------------------
@@ -213,10 +224,6 @@ body {
   ---------------------------------*/
   .contact {
     text-align: center;
-  }
-  
-  .contact-item:not(:last-child) {
-    margin-right: 10px;
   }
   
   .contact-text {
